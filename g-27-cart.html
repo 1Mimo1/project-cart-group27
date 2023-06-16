@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g27 cart</title>
+    <!--Links-->
+    <link rel="stylesheet" href="./assets/style/g-27style.css">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9?styles=49034,49031,49033,49035,49032,49036,49038,49040,49042,49044,49037,49039,49041,49043,49045,49046" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <img src="./assets/img/logo_nombre.png" alt="logo_name" class="nav__img">
+        <button class="nav__button nav__button--toggle">
+            <ion-icon name="cart-outline"></ion-icon>
+        </button>
+        <section class="nav__cart" id="cart">
+            <button class="empty__button" id="empty__cart">Clear Cart</button>
+            <div class="nav__list" id="cart__list">
+            </div>
+        </section>
+    </nav>
+    <header class="header">
+        <img src="./assets/img/logo blanco.png" alt="logo_blank" class="header__img">
+    </header>
+    <main class="main">
+            <h3 class="main__h3"> Todos nuestros productos </h3>
+        <!--Section of Printing Products-->
+        <section id="products-container" class="main__products products">
+        </section>
+         <!--Section of Modal box-->
+         <section class="modal" id="modal-box">
+            <div class="modal__top">
+                    <ion-icon name="close-outline" class="modal__exit"></ion-icon>
+            </div>
+            <div class="modal__information" id="modal--info" >
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <!--Scripts-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/g-27-cart.js"></script>
+</body>
+</html>
